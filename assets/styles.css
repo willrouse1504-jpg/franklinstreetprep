@@ -157,4 +157,32 @@ footer { padding: 55px 0 25px; color: #c3d6e4; background: #071d30; }
   .section { padding: 70px 0; }
   .contact { padding: 75px 0; }
   .legal { flex-direction: column; gap: 15px; }
+
+.brand-logo {
+  display: block;
+  width: auto;
+  object-fit: contain;
+}
+
+.brand-logo-header {
+  width: 180px;
+  height: 70px;
+}
+
+.brand-logo-footer {
+  width: 180px;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 560px) {
+  .brand-logo-header {
+    width: 135px;
+    height: 60px;
+  }
+
+  .brand-logo-footer {
+    width: 160px;
+  }
+}
 }
