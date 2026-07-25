@@ -159,34 +159,42 @@ footer { padding: 55px 0 25px; color: #c3d6e4; background: #071d30; }
   .legal { flex-direction: column; gap: 15px; }
 }
 
-
 /* Franklin Street Test Prep logo sizing */
-.brand img.brand-logo,
-img.brand-logo {
+
+.brand {
+  flex-shrink: 0;
+}
+
+.brand-logo {
   display: block;
   object-fit: contain;
-  max-width: 100%;
 }
 
-.site-header img.brand-logo-header {
-  width: 250px;
-  height: 70px;
+.site-header .brand-logo-header {
+  width: 220px;
+  height: 105px;
 }
 
-footer img.brand-logo-footer {
-  width: 180px;
+footer .brand-logo-footer {
+  width: 200px;
   height: auto;
   border-radius: 8px;
 }
 
+@media (max-width: 850px) {
+  .site-header .brand-logo-header {
+    width: 180px;
+    height: 90px;
+  }
+}
+
 @media (max-width: 560px) {
-  .site-header img.brand-logo-header {
-    width: 125px;
-    height: 58px;
+  .site-header .brand-logo-header {
+    width: 145px;
+    height: 74px;
   }
 
-  footer img.brand-logo-footer {
-    width: 150px;
-    height: auto;
+  footer .brand-logo-footer {
+    width: 160px;
   }
 }
